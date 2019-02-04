@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Open+Sans|Oswald|Raleway|Special+Elite" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Wild Circus</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#show">The Show</a></li>
+            <li><a href="#upcoming">Upcoming Shows</a></li>
+            <li><a href="#tickets_prices">Get Tickets</a></li>
+        </ul>
+
+        <div class="social">
+            <a class="facebook" href="http://facebook.com"><img src="https://s20.postimg.org/o0grjiba5/facebook-or.jpg" alt="facebook"></a>
+            <a href="http://instagram.com"><img src="https://s20.postimg.org/dnugxfhr1/instagram-or.jpg" alt="instagram"></a>
+            <a href="http://twitter.com"><img src="https://s20.postimg.org/3rtdxsbz1/twitter-or.jpg" alt="twitter"></a>
+        </div>
+    </nav>
+
+    <div class="wild-circus">
+        <section class="welcome">
+            <h2>Welcome into the Wild !</h2>
+            <p>The Wild Circus is back with a brand new show.
+                <br>Astonishing, dazzling, shiny...</p>
+        </section>
+    </div>
+</header>
+
+
+<section id="about_us">
+    <h3>About Us</h3>
+    <p class="experience">An unforgettable circus experience</p>
+    <div id="gallery_pictures">
+        <img src="https://s20.postimg.org/vvz43okv1/gallery_1.jpg" alt="Photography">
+        <img src="https://s20.postimg.org/xp6m5qvfh/gallery_2.jpg" alt="Photography">
+        <img src="https://s20.postimg.org/53djpcwwt/gallery_3.jpg" alt="Photography">
+        <img src="https://s20.postimg.org/3ls3dss65/gallery_4.jpg" alt="Photography">
+        <img src="https://s20.postimg.org/6h56knw65/gallery_6.jpg" alt="Photography">
+        <img src="https://s20.postimg.org/55xfc70kd/gallery_7.jpg" alt="Photography">
+        <p class="history">The Wild Circus is a group of wild artists and animals, playing and having fun since 1999. First settled by the Wildcode family in the forest of Nowhere, they were quickly joined by friends and artists willing to practise their art in unexpected places. </p>
+    </div>
+</section>
+
+<section id="show">
+    <h3>The Show</h3>
+    <article class="training">
+        <img class="wild_animals" src="https://s20.postimg.org/x7nd231r1/wild_animal_450px.jpg" alt="illustration training" title="An astonishing performance">
+        <p><span class="show_name">Animals</span>
+            <br>We bring to you the most astonishing wild wonders that nature gave us ! Come and get thrilled among wonderful animals, playing free in the city !
+    </article>
+
+    <article class="wire_performance">
+        <p><span class="show_name">High-Wire</span>
+            <br>After walking over the Grand Canyon, the Niagara Falls and the Yosemite Park, our 5 world-record wild-high-wire artist, is now flying over your city ! Come and see him walk over your head !</p>
+        <img class="wire_skycraper" src="https://s20.postimg.org/nodo8me8t/high_wire_450px.jpg" alt="illustration high wire" title="A giddy performance">
+    </article>
+
+    <article class="juggler">
+        <img class="fire_stars" src="https://s20.postimg.org/o3lqa0plp/lum_08.jpg" alt="illustration juggler" title="A dazzlling performance">
+        <p><span class="show_name">Fire-juggling</span>
+            <br>Be dazzled by the magic of our fire-juggling artists ! Their fire-sculptures bring stars, moons and planets down on Earth, so close, that you can almost touch the Universe...
+    </article>
+</section>
+
+<section id="upcoming">
+    <h3>Upcoming shows</h3>
+    <div class="contain_dates_tickets">
+        <div class="get_tickets">
+            <div class="button_tickets">
+                <button class="tickets">Get tickets now !</button>
+            </div>
+            <div class="form_tickets">
+                <form method="post" action="traitement.php">
+                    <p>
+                        <select name="city" id="upcoming-cities">
+                            <option value="">Where ?</option>
+                            <option value="bordeaux">Bordeaux</option>
+                            <option value="fontainebleau">Fontainebleau</option>
+                            <option value="laloupe">La Loupe</option>
+                            <option value="lille">Lille</option>
+                            <option value="lyon">Lyon</option>
+                            <option value="orleans">Orléans</option>
+                            <option value="paris">Paris</option>
+                            <option value="strasbourg">Strasbourg</option>
+                            <option value="toulouse">Toulouse</option>
+                        </select>
+                    </p>
+                </form>
+                <form method="post" action="traitement.php">
+                    <p>
+                        <select name="number" id="choose_number">
+                            <option value="">How many tickets ?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="more">More ? Contact us</option>
+                        </select>
+                    </p>
+                    <input type="submit" value="Send" id="submit">
+                </form>
+            </div>
+        </div>
+
+        <table>
+            <tr class="bordeaux">
+                <td class="city_1">Bordeaux : </td>
+                <td class="date_1"> September 04th and 05th</td>
+            </tr>
+            <tr class="fontainebleau">
+                <td class="city_2">Fontainebleau : </td>
+                <td class="date_2"> September 18th, 19th and 20th</td>
+            </tr>
+            <tr class="laloupe">
+                <td class="city_3">La Loupe : </td>
+                <td class="date_3"> September 26th and 27th</td>
+            </tr>
+            <tr class="lille">
+                <td class="city_4">Lille : </td>
+                <td class="date_4"> September 30th and October 01st</td>
+            </tr>
+            <tr class="lyon">
+                <td class="city_5">Lyon : </td>
+                <td class="date_5"> October 10th, 11th and 12th</td>
+            </tr>
+            <tr class="orleans">
+                <td class="city_6">Orléans : </td>
+                <td class="date_6"> October 21st and 22nd</td>
+            </tr>
+            <tr class="paris">
+                <td class="city_7">Paris : </td>
+                <td class="date_7"> October 28th and 29th</td>
+            </tr>
+            <tr class="strasbourg">
+                <td class="city_8">Strasbourg : </td>
+                <td class="date_8"> November 04th, 05th and 06th</td>
+            </tr>
+            <tr class="toulouse">
+                <td class="city_9">Toulouse : </td>
+                <td class="date_1"> November 12th and 13th</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="tickets_prices">
+    <h3>Tickets and Prices</h3>
+    <div class="contain_price">
+        <div class="price_policy">
+            <ul class="prices">
+                <li>Child under 12 : FREE</li>
+                <li>Child and adult ticket : $10</li>
+            </ul>
+            <button class="tickets">Get tickets now !</button>
+        </div>
+        <div class="form_tickets2">
+            <form method="post" action="traitement.php">
+                <p>
+                    <select name="city" id="upcoming-cities2">
+                        <option value="">Where ?</option>
+                        <option value="bordeaux">Bordeaux</option>
+                        <option value="fontainebleau">Fontainebleau</option>
+                        <option value="laloupe">La Loupe</option>
+                        <option value="lille">Lille</option>
+                        <option value="lyon">Lyon</option>
+                        <option value="orleans">Orléans</option>
+                        <option value="paris">Paris</option>
+                        <option value="strasbourg">Strasbourg</option>
+                        <option value="toulouse">Toulouse</option>
+                    </select>
+                </p>
+            </form>
+            <form method="post" action="traitement.php">
+                <p>
+                    <select name="number" id="choose_number2">
+                        <option value="">How many tickets ?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="more">More ? Contact us</option>
+                    </select>
+                </p>
+                <input type="submit" value="Send" id="submit2">
+            </form>
+        </div>
+        <div class="groups">
+            <p>The Wild Circus welcomes groups. Contact us to know about our pricing policy for groups over 10.</p>
+            <button class="contact">Contact us</button>
+        </div>
+        <div class="form_contact">
+            <form method="post" action="traitement.php">
+                <p><input class="email" type="email" name="more_info" id="more_info" placeholder="Your email">
+                    <textarea name="your_message" id="your message" placeholder="Your message" rows="20" cols="60"></textarea>
+                    <input class="go_button" type="submit" value="Send">
+                </p>
+            </form>
+        </div>
+        <div class="private">
+            <p>You would like the Wild Circus just for you ? We can organize a special show. Contact us to know more.</p>
+            <button class="contact">Contact us</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="newsletter">
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="more_info">Want to know more about us ? Ask for our newsletter</label>
+                <input class="email" type="email" name="more_info" id="more_info2" placeholder="Your email">
+                <input class="go_button" type="submit" value="Go">
+            </p>
+        </form>
+    </div>
+
+    <p class="send_email">Contact : wildcircus@wildcircus.org</p>
+
+    <p class="robozzle">Have a look on what we've done on <a href="http://www.robozzle.com/user.aspx?name=Crusoette">RoboZZle</a></p>
+</footer>
+<script>
+$(document).ready(function() {
+$('.button_tickets .tickets').click(function() {
+$('.form_tickets').show();
+});
+});
+
+$(document).ready(function() {
+$('.price_policy .tickets').click(function() {
+$('.form_tickets2').show();
+});
+});
+
+$('#submit, #submit2').click(function() {
+$('.form_tickets, .form_tickets2').hide();
+alert('Your command has been sent successfully. We will send you a confirmation email in the next days.');
+return false;
+});
+
+$(document).ready(function() {
+$('.contact').click(function() {
+$('.form_contact').show();
+});
+});
+$('.go_button').click(function() {
+$('.form_contact').hide();
+alert('Thank you. Your message has been sent successfully.');
+return false;
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding-top: 1px;
+    background-color: black;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Cabin Sketch', cursive;
+    color: #47795c;
+    font-size: 80px;
+    border: 5px solid #47795c;
+    border-radius: 35px;
+    width: 500px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+header nav {
+    background: black;
+    border-top: 5px solid #47795c;
+    width: 100%;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.menu li {
+    width: 150px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #47795c;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+.social {
+    float: right;
+    margin-right: 10px;
+}
+
+nav img {
+    height : 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.wild-circus {
+    background-image: url("https://s20.postimg.org/ur7rj0fj1/header_circus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 224px;
+    padding: 20px;
+}
+
+.welcome {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    width: 700px;
+    margin: auto;
+}
+
+#about_us, #show, #upcoming, #tickets_prices, footer {
+    width: 100%;
+}
+
+#show {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#show:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url("https://s20.postimg.org/x7nd231r1/wild_animal_450px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tickets_prices {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom : 20px;
+}
+
+#tickets_prices:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-image: url("https://s20.postimg.org/55xfc70kd/gallery_7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #47795c;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px auto 10px auto;
+}
+
+.experience {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px auto 20px auto;
+}
+
+#gallery_pictures {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.history {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    width: 600px;
+    margin: 40px auto 20px auto;
+}
+
+.training, .wire_performance, .juggler {
+    display: flex;
+    width: 800px;
+    margin: 40px auto 40px auto;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+.show_name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #47795c;
+}
+
+#show article p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.contain_dates_tickets {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.get_tickets {
+    margin-top: 70px;
+}
+
+.form_tickets {
+    margin-top: 40px;
+    display: none;
+}
+
+#upcoming-cities, #choose_number, #upcoming-cities2, #choose_number2 {
+    font-family: 'Raleway', sans-serif;
+    color: #47795c;
+    font-size: 25px;
+    text-align: center;
+}
+
+#submit, #submit2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: #47795c;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.city_1, .city_2, .city_3, .city_4, .city_5, .city_6, .city_7, .city_8, .city_9 {
+    color: #794764;
+    text-align: right;
+    font-weight: bold;
+}
+
+.tickets {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    background: #47795c;
+    color: white;
+    border-radius: 15px;
+}
+
+.contain_price {
+    display: flex;
+    justify-content : space-around;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.price_policy, .groups, .private {
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+    border: 3px solid #47795c;
+    margin-right: 60px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.prices {
+    list-style-type: none;
+}
+
+.form_tickets2 {
+    position: absolute;
+    left : 80px;
+    bottom : 40px;
+    padding : 20px;
+    background : black;
+    display: none;
+}
+
+
+.groups .contact, .private .contact {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background: #47795c;
+    color: white;
+    border-radius: 15px;
+}
+
+.form_contact {
+    position: absolute;
+    right : 0;
+    bottom: 0;
+    display : none;
+}
+
+footer {
+    background: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 5px solid #47795c;
+    padding-left: 15px;
+}
+
+.newsletter {
+    font-size: 20px;
+}
+
+.robozzle a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background: #47795c;
+}
+
+.robozzle a:hover {
+    color: black;
+}
+
+.robozzle a:visited {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .menu li {
+        width : 400px;
+    }
+    .wild_animals, .wire_skycraper, .fire_stars {
+        width : 20%;
+        float : left;
+        width : 600px;
+    }
+    .contain_dates_tickets, .contain_price {
+        margin: auto;
+    }
+}
